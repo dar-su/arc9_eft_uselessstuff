@@ -257,8 +257,7 @@ SWEP.Animations = {
             {hide = 3, t = 0},
             {hide = 0, t = 0.2},
             {hide = 1, t = 2},
-        },
-        Mult = 0.1
+        }
     },
 
     ["holster"] = { 
@@ -269,8 +268,7 @@ SWEP.Animations = {
             { s = "arc9_eft_shared/weap_out.ogg", t = 1.6 },
             {hide = 1, t = 0},
             {hide = 0, t = 0.1},
-        } ,
-        Mult = 0.1
+        }
     },
 
 
@@ -288,7 +286,6 @@ SWEP.Animations = {
         MinProgress = 1,
         NoStatAffectors = true,
         DropMagAt = 1.5,
-        Mult = 0.1
     },
     
     ["inspect"] = {
