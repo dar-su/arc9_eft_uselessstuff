@@ -94,7 +94,7 @@ SWEP.HasSights = true
 
 SWEP.EnterSightsSound = ARC9EFT.ADSPistol
 SWEP.ExitSightsSound = ARC9EFT.ADSPistol
-SWEP.AimDownSightsTime = 0.4
+SWEP.AimDownSightsTime = 0.55
 
 SWEP.IronSights = {
     Pos = Vector(-4.85, -5.5, -0.253),
@@ -193,6 +193,22 @@ SWEP.PeekAng = Angle(0, 0, 0)
 SWEP.NoPeekCrosshair = true
 SWEP.PeekMaxFOV = 0
 SWEP.PeekingIsSight = true
+
+SWEP.FreeAimRadius = 2
+SWEP.FreeAimRadiusSights = 0
+
+SWEP.Sway = 1
+SWEP.SwayMove = 0.5
+SWEP.SwayMidAir = 10
+SWEP.SwayMultCrouch = 0.75
+SWEP.SwayMultHipFire = 0.2
+SWEP.SwayMultSights = 0.1
+
+SWEP.HoldBreathTime = 60
+SWEP.RestoreBreathTime = 30
+SWEP.BreathInSound = false 
+SWEP.BreathOutSound = false
+SWEP.BreathRunOutSound = "arc9_eft_shared/bear3_breath_sprint.ogg"
 
 SWEP.RTScope = true
 SWEP.RTScopeSubmatIndex = 2
