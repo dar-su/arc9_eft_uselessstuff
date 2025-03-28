@@ -2,6 +2,7 @@ AddCSLuaFile()
 SWEP.Base = "arc9_eft_base"
 SWEP.Category = "ARC9 - Escape From Tarkov"
 SWEP.Spawnable = true
+SWEP.NotForNPCs = true
 
 ------------------------- |||           Trivia            ||| -------------------------
 
