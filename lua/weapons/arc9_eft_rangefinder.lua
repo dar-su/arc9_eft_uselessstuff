@@ -7,19 +7,16 @@ SWEP.EntitySelectIcon = true
 SWEP.Category = "ARC9 - Escape From Tarkov"
 SWEP.SubCategory = ARC9:GetPhrase("eft_subcat_snip")
 SWEP.Credits = { 
-    [ARC9:GetPhrase("eft_trivia_author") .. "1"] = "Darsu", 
-    [ARC9:GetPhrase("eft_trivia_assets") .. "2"] = "Battlestate Games LTD", 
+    ["eft_trivia_author1"] = "Darsu", 
+    ["eft_trivia_assets2"] = "Battlestate Games LTD", 
 }
 
-SWEP.PrintName = "Vortex Ranger 1500"
-SWEP.ShortName = "R1500"
-ARC9:AddPhrase("eft_class_weapon_special", "Special item", "en")
-ARC9:AddPhrase("eft_class_weapon_special", "Спецоборудование", "ru")
-ARC9:AddPhrase("eft_class_weapon_special", "Spewiaw item UwU", "uwu")
-SWEP.Class = ARC9:GetPhrase("eft_class_weapon_special")
+SWEP.PrintName = ARC9:GetPhrase("eft_weapon_vortex_full")
+SWEP.ShortName = ARC9:GetPhrase("eft_weapon_vortex")
+SWEP.Class = "eft_class_weapon_special"
 SWEP.Trivia = {}
 
-SWEP.Description = [[A handheld optical device that allows you to measure the distance to targets. Manufactured by Vortex Optics.]]
+SWEP.Description = "eft_weapon_vortex_desc"
 
 SWEP.BarrelLength = 2
 SWEP.Slot = 0

@@ -6,21 +6,18 @@ SWEP.NotForNPCs = true
 
 ------------------------- |||           Trivia            ||| -------------------------
 
-ARC9:AddPhrase("eft_weapon_rsp30w", "ROP-30 (White)", "en")
-ARC9:AddPhrase("eft_weapon_rsp30w", "РОП-30 (Белый)", "ru")
-ARC9:AddPhrase("eft_weapon_rsp30w", "ROP-30 (White)", "uwu")
-SWEP.PrintName = ARC9:GetPhrase("eft_weapon_rsp30w")
-SWEP.Description = [[ROP-30 is a reactive flare cartridge for lighting up low-visibility areas during night time. ]]
+SWEP.PrintName = ARC9:GetPhrase("eft_weapon_rop30")
+SWEP.Description = "eft_weapon_rop30_desc"
 
-SWEP.Class = ARC9:GetPhrase("eft_class_weapon_grenadelauncher")
+SWEP.Class = "eft_class_weapon_grenadelauncher"
 SWEP.SubCategory = ARC9:GetPhrase("eft_subcat_grenades")
 
 SWEP.Trivia = {
-    [ARC9:GetPhrase("eft_trivia_manuf") .. "1"] = "?",
-    [ARC9:GetPhrase("eft_trivia_cal") .. "2"] = "30mm flare cartridge",
-    [ARC9:GetPhrase("eft_trivia_act") .. "3"] = "Single-use",
-    [ARC9:GetPhrase("eft_trivia_country") .. "4"] = ARC9:GetPhrase("eft_trivia_country_su"),
-    [ARC9:GetPhrase("eft_trivia_year") .. "5"] = "?"
+    ["eft_trivia_manuf1"] = "eft_trivia_unknown",
+    ["eft_trivia_cal2"] = "eft_trivia_calibr_30flare",
+    ["eft_trivia_act3"] = "eft_trivia_act_singleuse",
+    ["eft_trivia_country4"] = "eft_trivia_country_ussr",
+    ["eft_trivia_year5"] = "eft_trivia_unknown"
 }
 
 SWEP.ViewModel = "models/weapons/arc9/darsu_eft/c_rsp30.mdl"

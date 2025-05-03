@@ -6,11 +6,8 @@ SWEP.Spawnable = true
 
 ------------------------- |||           Trivia            ||| -------------------------
 
-ARC9:AddPhrase("eft_weapon_rsp30g", "RSP-30 (Green)", "en")
-ARC9:AddPhrase("eft_weapon_rsp30g", "РСП-30 (Зеленый)", "ru")
-ARC9:AddPhrase("eft_weapon_rsp30g", "RSP-30 (Green)", "uwu")
 SWEP.PrintName = ARC9:GetPhrase("eft_weapon_rsp30g")
-SWEP.Description = [[RSP-30 is a reactive signal cartridge for commanding and maintaining squad interaction. Multi-star rocket cartridges are used as flares. ]]
+SWEP.Description = "eft_weapon_rsp30g_desc"
 
 SWEP.DefaultSkin = 3
 SWEP.ShootEnt = "arc9_eft_26x75_green"

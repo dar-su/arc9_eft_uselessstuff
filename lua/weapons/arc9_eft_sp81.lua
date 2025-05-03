@@ -6,25 +6,18 @@ SWEP.NotForNPCs = true
 
 ------------------------- |||           Trivia            ||| -------------------------
 
-ARC9:AddPhrase("eft_weapon_sp81", "ZiD SP-81", "en")
-ARC9:AddPhrase("eft_weapon_sp81", "ЗиД СП-81", "ru")
-ARC9:AddPhrase("eft_weapon_sp81", "zzid SP 81!", "uwu")
-ARC9:AddPhrase("eft_class_weapon_signalpistol", "Signal pistol", "en")
-ARC9:AddPhrase("eft_class_weapon_signalpistol", "Сигнальный пистолет", "ru")
-ARC9:AddPhrase("eft_class_weapon_signalpistol", "Signaw piwtow", "uwu")
-
 SWEP.PrintName = ARC9:GetPhrase("eft_weapon_sp81")
-SWEP.Description = [[A smoothbore hand pistol designed for firing signal flare cartridges of various burning colors. Manufactured by V.A. Degtyarev Plant.]]
+SWEP.Description = "eft_weapon_sp81_desc"
 
-SWEP.Class = ARC9:GetPhrase("eft_class_weapon_signalpistol")
+SWEP.Class = "eft_class_weapon_signalpis"
 SWEP.SubCategory = ARC9:GetPhrase("eft_subcat_grenades")
 
 SWEP.Trivia = {
-    [ARC9:GetPhrase("eft_trivia_manuf") .. "1"] = "V.A. Degtyarev Plant.",
-    [ARC9:GetPhrase("eft_trivia_cal") .. "2"] = "26x75mm",
-    [ARC9:GetPhrase("eft_trivia_act") .. "3"]= ARC9:GetPhrase("eft_trivia_act_breech") or "Breech",
-    [ARC9:GetPhrase("eft_trivia_country") .. "4"] = ARC9:GetPhrase("eft_trivia_country_su"),
-    [ARC9:GetPhrase("eft_trivia_year") .. "5"] = "1985"
+    ["eft_trivia_manuf1"] = "eft_trivia_manuf_degtyaryov",
+    ["eft_trivia_cal2"] = "eft_trivia_calibr_26x75",
+    ["eft_trivia_act3"]= "eft_trivia_act_breech",
+    ["eft_trivia_country4"] = "eft_trivia_country_ussr",
+    ["eft_trivia_year5"] = "1980"
 }
 
 
