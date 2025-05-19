@@ -226,7 +226,6 @@ local pouchout = {"arc9_eft_shared/generic_mag_pouch_out1.ogg","arc9_eft_shared/
 SWEP.Animations = {
     ["idle"] = {
         Source = "idle",
-        Time = 111, -- REMOVE WHEN DONEEEE
     },
 
     ["draw"] = {

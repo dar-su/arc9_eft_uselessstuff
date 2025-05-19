@@ -243,7 +243,6 @@ SWEP.Animations = {
         EventTable = {
             {hide = 1, t = 0},
         },
-        -- Time = 100,       -- REMOVE TIME !!!!!!!!
     },
 
 
