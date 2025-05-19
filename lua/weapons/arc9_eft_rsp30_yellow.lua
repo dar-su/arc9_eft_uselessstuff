@@ -7,7 +7,7 @@ SWEP.Spawnable = true
 ------------------------- |||           Trivia            ||| -------------------------
 
 SWEP.PrintName = ARC9:GetPhrase("eft_weapon_rsp30y")
-SWEP.Description = "eft_weapon_rsp30y_desc"
+SWEP.Description = ARC9:GetPhrase("eft_weapon_rsp30y_desc")
 
 SWEP.DefaultSkin = 1
 SWEP.ShootEnt = "arc9_eft_26x75_yellow"

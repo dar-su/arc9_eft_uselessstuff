@@ -11,12 +11,12 @@ SWEP.Credits = {
     ["eft_trivia_assets2"] = "Battlestate Games LTD", 
 }
 
-SWEP.PrintName = ARC9:GetPhrase("eft_weapon_vortex_full")
+SWEP.PrintName = ARC9:GetPhrase("eft_weapon_vortex")
 SWEP.ShortName = ARC9:GetPhrase("eft_weapon_vortex")
-SWEP.Class = "eft_class_weapon_special"
+SWEP.Class = ARC9:GetPhrase("eft_class_weapon_special")
 SWEP.Trivia = {}
 
-SWEP.Description = "eft_weapon_vortex_desc"
+SWEP.Description = ARC9:GetPhrase("eft_weapon_vortex_desc")
 
 SWEP.BarrelLength = 2
 SWEP.Slot = 0

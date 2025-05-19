@@ -7,9 +7,9 @@ SWEP.NotForNPCs = true
 ------------------------- |||           Trivia            ||| -------------------------
 
 SWEP.PrintName = ARC9:GetPhrase("eft_weapon_sp81")
-SWEP.Description = "eft_weapon_sp81_desc"
+SWEP.Description = ARC9:GetPhrase("eft_weapon_sp81_desc")
 
-SWEP.Class = "eft_class_weapon_signalpis"
+SWEP.Class = ARC9:GetPhrase("eft_class_weapon_signalpis")
 SWEP.SubCategory = ARC9:GetPhrase("eft_subcat_grenades")
 
 SWEP.Trivia = {
@@ -296,7 +296,7 @@ SWEP.AttachmentElements = {
 
 SWEP.Attachments = {
     {
-        PrintName = "Grenade type",
+        PrintName = ARC9:GetPhrase("eft_cat_ammo"),
         Category = {"eft_ammo_26x75"},
         Bone = "patron_in_weapon",
         Pos = Vector(0, 0, 0),
@@ -305,7 +305,7 @@ SWEP.Attachments = {
         Integral = "eft_ammo_26x75_green",
     },
     {
-        PrintName = "Custom slot",
+        PrintName = ARC9:GetPhrase("eft_cat_custom"),
         Category = {"eft_custom_slot", "eft_custom_sp81"},
         Bone = "weapon",
         Pos = Vector(0, 12, -1),

@@ -6,9 +6,9 @@ SWEP.Spawnable = true
 ------------------------- |||           Trivia            ||| -------------------------
 
 SWEP.PrintName = ARC9:GetPhrase("eft_weapon_pd20")
-SWEP.Description = "eft_weapon_pd20_desc"
+SWEP.Description = ARC9:GetPhrase("eft_weapon_pd20_desc")
 
-SWEP.Class = "eft_class_weapon_toy"
+SWEP.Class = ARC9:GetPhrase("eft_class_weapon_toy")
 SWEP.SubCategory = ARC9:GetPhrase("eft_subcat_pist")
 
 SWEP.Trivia = {
@@ -305,7 +305,7 @@ SWEP.EFTRequiredAtts = { }
 
 SWEP.Attachments = {
     {
-        PrintName = "Custom slot",
+        PrintName = ARC9:GetPhrase("eft_cat_custom"),
         Category = {"eft_custom_slot", "eft_custom_toy"},
         Bone = "weapon",
         Pos = Vector(0, 16, -2),
