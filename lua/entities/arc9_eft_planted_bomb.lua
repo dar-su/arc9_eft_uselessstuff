@@ -8,41 +8,44 @@ ENT.Spawnable = true
 ENT.FlareColor = Color(255, 64, 30, 1)
 local flaremat = Material("entities/eft_sp81_attachments/flare")
 
-function ENT:Draw()
+function ENT:Draw(flags)
 	self:DrawModel()
-
-    local light = DynamicLight(self:EntIndex())
-
-	self.Brightness = math.Approach(self.Brightness or 1, 0, FrameTime() * 1)
-
-	local delta = math.max(0.5, self.Brightness)
+	local isDepthPass = ( bit.band( flags, STUDIO_SSAODEPTHTEXTURE ) != 0 || bit.band( flags, STUDIO_SHADOWDEPTHTEXTURE ) != 0 )
 	
-    local minsize = 2 * delta
-    local maxsize = 2 * delta
+	if !isDepthPass then
+		local light = DynamicLight(self:EntIndex())
 
-    local colorr = table.Copy(self.FlareColor)
-    colorr.r = colorr.r * delta
-    colorr.g = colorr.g * delta
-    colorr.b = colorr.b * delta
+		self.Brightness = math.Approach(self.Brightness or 1, 0, FrameTime() * 1)
 
-    if light then
-        light.Pos = self:GetPos() + Vector(0, 0, 16)
-        light.r = colorr.r
-        light.g = colorr.g
-        light.b = colorr.b
-        light.Brightness = 4
-        light.Decay = 3
-        light.Size = 32 * delta
-        light.DieTime = CurTime() + 0.2
-    end
+		local delta = math.max(0.5, self.Brightness)
+		
+		local minsize = 2 * delta
+		local maxsize = 2 * delta
 
-	for i = 1, 5 do
-		local att = self:GetAttachment(i)
-		if att then
-			render.SetMaterial(flaremat)
-			render.DrawSprite(att.Pos, math.random(minsize, maxsize) * 7, math.random(minsize, maxsize) * 7, colorr)
-			colorr.a = 255
-			render.DrawSprite(att.Pos, math.random(minsize, maxsize), math.random(minsize, maxsize), colorr)
+		local colorr = table.Copy(self.FlareColor)
+		colorr.r = colorr.r * delta
+		colorr.g = colorr.g * delta
+		colorr.b = colorr.b * delta
+
+		if light then
+			light.Pos = self:GetPos() + Vector(0, 0, 16)
+			light.r = colorr.r
+			light.g = colorr.g
+			light.b = colorr.b
+			light.Brightness = 4
+			light.Decay = 3
+			light.Size = 32 * delta
+			light.DieTime = CurTime() + 0.2
+		end
+
+		for i = 1, 5 do
+			local att = self:GetAttachment(i)
+			if att then
+				render.SetMaterial(flaremat)
+				render.DrawSprite(att.Pos, math.random(minsize, maxsize) * 7, math.random(minsize, maxsize) * 7, colorr)
+				colorr.a = 255
+				render.DrawSprite(att.Pos, math.random(minsize, maxsize), math.random(minsize, maxsize), colorr)
+			end
 		end
 	end
 end

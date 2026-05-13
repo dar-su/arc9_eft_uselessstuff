@@ -15,6 +15,8 @@ ATT.ShootEnt = "arc9_eft_26x75_green"
 
 ATT.Category = {"eft_ammo_26x75"}
 
+-- meh: 62389aaba63f32501b1b444f
+-- EFT ID: NO
 ARC9.LoadAttachment(ATT, "eft_ammo_26x75_green")
 
 ///////////////////////////////////////      eft_ammo_26x75_red
@@ -32,6 +34,8 @@ ATT.ShootEnt = "arc9_eft_26x75_red"
 
 ATT.Category = {"eft_ammo_26x75"}
 
+-- meh: 62389ba9a63f32501b1b4451
+-- EFT ID: NO
 ARC9.LoadAttachment(ATT, "eft_ammo_26x75_red")
 
 ///////////////////////////////////////      eft_ammo_26x75_awhite
@@ -49,6 +53,8 @@ ATT.ShootEnt = "arc9_eft_26x75_white"
 
 ATT.Category = {"eft_ammo_26x75"}
 
+-- meh: 62389bc9423ed1685422dc57
+-- EFT ID: NO
 ARC9.LoadAttachment(ATT, "eft_ammo_26x75_awhite")
 
 ///////////////////////////////////////      eft_ammo_26x75_yellow
@@ -66,6 +72,8 @@ ATT.ShootEnt = "arc9_eft_26x75_yellow"
 
 ATT.Category = {"eft_ammo_26x75"}
 
+-- meh: 62389be94d5d474bf712e709
+-- EFT ID: NO
 ARC9.LoadAttachment(ATT, "eft_ammo_26x75_yellow")
 
 ///////////////////////////////////////      eft_ammo_26x75_greenp
@@ -85,4 +93,6 @@ ATT.ShootEnt = "arc9_eft_26x75_green"
 
 ATT.Category = {"eft_ammo_26x75"}
 
+-- meh: NO635267f063651329f75a4ee8
+-- EFT ID: NO
 ARC9.LoadAttachment(ATT, "eft_ammo_26x75_greenp")
