@@ -98,7 +98,8 @@ SWEP.IronSights = {
     Ang = Angle(0, 0, 0),
     Midpoint = { Pos = Vector(-1, 0, 8), Ang = Angle(0, 0, -145) },
     Magnification = 1,
-    ViewModelFOV = 54
+    ViewModelFOV = 54,
+    Blur = false
 }
 
 
@@ -183,8 +184,8 @@ SWEP.Animations = {
 
 SWEP.AttachmentElements = {}
 SWEP.CantSafety = true
--- SWEP.CantPeek = true
-SWEP.CantPeek = false 
+SWEP.CantPeek = true
+-- SWEP.CantPeek = false 
 SWEP.PeekPos = Vector(0, -2.1, 0)
 SWEP.PeekAng = Angle(0, 0, 0)
 SWEP.NoPeekCrosshair = true
@@ -214,10 +215,18 @@ SWEP.RTScopeMagnification = 10
 SWEP.RTScopeReticle = Material("models/weapons/arc9/darsu_eft/ranger/rangefinder_reticle.png", "mips smooth")
 SWEP.RTScopeReticleScale = 1 --0.83
 SWEP.RTScopeColorable = false
-SWEP.RTScopeShadowIntensity = 10
+SWEP.RTScopeShadowIntensity = 0.1
 SWEP.RTScopeBlackBox = true 
 SWEP.RTScopeBlackBoxShadow = true 
 SWEP.ScopeScreenRatio = 256/1080
+
+SWEP.RTScopeNew_DisableShaderEyeOffset = true
+-- SWEP.RTScopeNew_FixAngle = Angle(0.36357003450394, 28.672779083252, 1.7121442556381)
+SWEP.RTScopeNew_OnlyInSights = true
+SWEP.RTScopeNew_DisableRTVM = true
+SWEP.RTScopeNew_ForceExpensive = true
+SWEP.RTScopeReticleScale = 0.3
+SWEP.RTScopeNew_ShadowScale = 2.2
 
 if CLIENT then
     surface.CreateFont("arc9eft_ranger", { font = "Bender", size = 124, weight = 500, antialias = true, italic = true, blursize = 5 })
@@ -253,6 +262,6 @@ SWEP.RTScopeDrawFunc = function(swep, rtsize, sight)
 
     surface.SetFont("arc9eft_ranger")
     surface.SetTextColor(255, 0, 0)
-    surface.SetTextPos(400, 288)
+    surface.SetTextPos(400/920 * rtsize, 288/920 * rtsize)
     surface.DrawText(text)
 end
